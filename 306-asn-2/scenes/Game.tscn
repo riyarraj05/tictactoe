@@ -1,5 +1,123 @@
-[gd_scene format=3 uid="uid://csy2psargmksg"]
+[gd_scene load_steps=12 format=3 uid="uid://csy2psargmksg"]
+
+[ext_resource type="Script" uid="uid://cd3aq37pccnnm" path="res://scenes/game.gd" id="1_ibkli"]
+[ext_resource type="Texture2D" uid="uid://b5qj5e5w3dnja" path="res://assets/asn2edited.png" id="2_qbsmt"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cpr0p"]
+texture = ExtResource("2_qbsmt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_78awf"]
+texture = ExtResource("2_qbsmt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_s0nni"]
+texture = ExtResource("2_qbsmt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_aug50"]
+texture = ExtResource("2_qbsmt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kiw3p"]
+texture = ExtResource("2_qbsmt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_400sg"]
+texture = ExtResource("2_qbsmt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g4kob"]
+texture = ExtResource("2_qbsmt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qy1jj"]
+texture = ExtResource("2_qbsmt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3xj3m"]
+texture = ExtResource("2_qbsmt")
 
 [node name="Game" type="Control"]
 layout_mode = 3
-anchors_preset = 0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ibkli")
+
+[node name="TurnLabel" type="Label" parent="."]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Turn: X"
+
+[node name="BoardView" type="GridContainer" parent="."]
+custom_minimum_size = Vector2(300, 150)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+columns = 3
+
+[node name="Cell_0" type="Button" parent="BoardView"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxTexture_cpr0p")
+
+[node name="Cell_1" type="Button" parent="BoardView"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxTexture_78awf")
+
+[node name="Cell_2" type="Button" parent="BoardView"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxTexture_s0nni")
+
+[node name="Cell_3" type="Button" parent="BoardView"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxTexture_aug50")
+
+[node name="Cell_4" type="Button" parent="BoardView"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxTexture_kiw3p")
+
+[node name="Cell_5" type="Button" parent="BoardView"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxTexture_400sg")
+
+[node name="Cell_6" type="Button" parent="BoardView"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxTexture_g4kob")
+
+[node name="Cell_7" type="Button" parent="BoardView"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxTexture_qy1jj")
+
+[node name="Cell_8" type="Button" parent="BoardView"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxTexture_3xj3m")
+
+[node name="NewGameButton" type="Button" parent="."]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.2612847
+anchor_top = 0.15123457
+anchor_right = 0.7387153
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "New Game"
+metadata/_edit_use_anchors_ = true
+
+[node name="ResultDialog" type="AcceptDialog" parent="."]
