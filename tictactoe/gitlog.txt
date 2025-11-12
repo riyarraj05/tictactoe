@@ -1,0 +1,36 @@
+C:\Users\riyar\306asns\306asn2>git log
+commit 8b3543d54e7d91b82bdd1859646e7633794069ff (HEAD -> main, origin/main, origin/HEAD)
+Author: Riya Raj <lio752@usask.ca>
+Date:   Sun Nov 9 19:57:23 2025 -0700
+
+    made changes to positions of TurnLabel, and NewGameButton
+
+commit b86a47caabbb77240d57f9dbbc68d44310472ece
+Author: Riya Raj <lio752@usask.ca>
+Date:   Sun Nov 9 18:50:59 2025 -0700
+
+    implemented core game logic and UI state updates. initialize game board, manager player turns and handle press. includes functions for: checking for winner or a deaw, switching between 2 players, resetting the game state with new game button, updating UI to reflect current turn, game status, and board state with textures
+
+commit 6edfd8372a8b64695aa266a45b3150b1817333bc
+Author: Riya Raj <lio752@usask.ca>
+Date:   Sun Nov 9 18:39:05 2025 -0700
+
+    added children under button.
+
+commit 069e09c79990644f800d7b7419bb90b400edefbc
+Author: Riya Raj <lio752@usask.ca>
+Date:   Sun Nov 9 17:53:12 2025 -0700
+
+    added main game scene Game; label, grid container, button, and acceptance dialog as children of main scene game
+
+commit 1066b7d06be70e05e05047e38e1d74806cd2d0ff
+Author: Riya Raj <lio752@usask.ca>
+Date:   Sun Nov 9 17:40:45 2025 -0700
+
+    copied provided spritesheet for asn2
+
+commit fc46b3159decedb842bbe11e4afbf1f467afee79
+Author: Riya Raj (lio752) <lio752@mail.usask.ca>
+Date:   Thu Nov 6 19:14:31 2025 -0600
+
+    Initial commit
